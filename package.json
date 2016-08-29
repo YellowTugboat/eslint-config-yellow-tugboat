@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yellow-tugboat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Linting rules based on the Yellow Tugboat coding standards.",
   "main": "index.js",
   "repository": {
