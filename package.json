@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yellow-tugboat",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Linting rules based on the Yellow Tugboat coding standards.",
   "main": "index.js",
   "repository": {
@@ -14,9 +14,15 @@
     "eslintconfig",
     "eslint"
   ],
+  "scripts": {
+    "build": "mkdir -p build && jsdoc2md --template doc/README_BASE.hbs index.js > README.md"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/YellowTugboat/eslint-config-yellow-tugboat/issues"
   },
-  "homepage": "https://github.com/YellowTugboat/eslint-config-yellow-tugboat#readme"
+  "homepage": "https://github.com/YellowTugboat/eslint-config-yellow-tugboat#readme",
+  "devDependencies": {
+    "jsdoc-to-markdown": "^2.0.0"
+  }
 }
