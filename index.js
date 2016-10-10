@@ -45,6 +45,18 @@ module.exports = {
     'no-implied-eval': 'error', // Avoid dangerous coding
     'no-label-var': 'error', // Avoid confusion
     'no-labels': ['error', { 'allowLoop': true }], // Generally should not be used for loops (refactor instead), never allowed for Switch statements
+    'max-len': ['error', {
+      'code': 100,
+      'tabWidth': 2,  // Set to match indent, but no tabs are expected to be used.
+      'ignoreTrailingComments': true,
+      'ignoreUrls': true,
+      'ignoreStrings': true,
+      'ignoreTemplateLiterals': true,
+    }], // Prevent code from being excessively wide, but allow specific exceptions.
+    'max-depth': 'error',
+    'max-statements': ['error', 20], // Prevent excessive function length.
+    'complexity': ['error', 15], // Limit cyclomatic complexity
+
 
     // Arrow Functions
     'no-confusing-arrow': ['error', {'allowParens': false}], // Clarity is important.
