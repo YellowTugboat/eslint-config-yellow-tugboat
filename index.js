@@ -108,6 +108,7 @@ const config = {
     'max-len': ['error', {
       'code': 100,
       'tabWidth': 2,  // Set to match indent, but no tabs are expected to be used.
+      'ignoreComments': true,
       'ignoreTrailingComments': true,
       'ignoreUrls': true,
       'ignoreStrings': true,
