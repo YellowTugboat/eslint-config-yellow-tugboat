@@ -24,9 +24,11 @@
  * @prop {EslintRule} rules.curly - Curly braces clarify intent.
  * @prop {EslintRule} rules.no-caller - Rarely applicable or allowed.
  * @prop {EslintRule} rules.brace-style - Use Stroustrup style to create distinct block-sections, but remain somewhat condensed.
+ * @prop {EslintRule} rules.padding-line-between-statements - Enforce spacing around multiline blocks.
  * @prop {EslintRule} rules.no-whitespace-before-property - Discourage superfluous whitespace. Inline whitespace should occur only as necessary.
  * @prop {EslintRule} rules.no-multi-spaces - Inline whitespace should be simple.
  * @prop {EslintRule} rules.no-multiple-empty-lines - Multiple lines create excessive separation removing block context from operation. Many lines for clarity implies refactoring should occur.
+ * @prop {EsLintRule} rules.newline-per-chained-call - Format chains for better readability.
  * @prop {EslintRule} rules.key-spacing - Have uniform object declarations.
  * @prop {EslintRule} rules.no-trailing-spaces - Discourage superfluous whitespace.
  * @prop {EslintRule} rules.func-call-spacing - Discourage superfluous whitespace.
@@ -73,6 +75,13 @@ const config = {
     'brace-style': [ 'error', 'stroustrup', {
       'allowSingleLine': true
     }],
+    'padding-line-between-statements': [ 'error',
+      { blankLine: 'any', prev: [ 'block-like' ], next: [ 'block-like' ]},
+      { blankLine: 'always', prev: [ 'multiline-block-like', 'export', 'import' ], next: [ 'multiline-block-like' ]},
+      { blankLine: 'always', prev: [ 'multiline-block-like' ], next: [ 'block-like' ]},
+      { blankLine: 'always', prev: [ 'block-like' ], next: [ 'multiline-block-like' ]},
+      { blankLine: 'always', prev: 'multiline-block-like', next: 'return' },
+    ],
 
     // Whitespace
     'no-whitespace-before-property': 'error',
@@ -80,6 +89,9 @@ const config = {
       'ignoreEOLComments': true,
     }],
     'no-multiple-empty-lines': 'error',
+    'newline-per-chained-call': ['error', {
+      'ignoreChainWithDepth': 2,
+    }],
     'key-spacing': 'error',
     'no-trailing-spaces': 'error',
     'func-call-spacing': 'error',
@@ -148,4 +160,3 @@ const config = {
 };
 
 module.exports = config;
-

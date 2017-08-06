@@ -38,9 +38,11 @@ The rule configuration.
 | rules.curly | <code>EslintRule</code> | Curly braces clarify intent. |
 | rules.no-caller | <code>EslintRule</code> | Rarely applicable or allowed. |
 | rules.brace-style | <code>EslintRule</code> | Use Stroustrup style to create distinct block-sections, but remain somewhat condensed. |
+| rules.padding-line-between-statements | <code>EslintRule</code> | Enforce spacing around multiline blocks. |
 | rules.no-whitespace-before-property | <code>EslintRule</code> | Discourage superfluous whitespace. Inline whitespace should occur only as necessary. |
 | rules.no-multi-spaces | <code>EslintRule</code> | Inline whitespace should be simple. |
 | rules.no-multiple-empty-lines | <code>EslintRule</code> | Multiple lines create excessive separation removing block context from operation. Many lines for clarity implies refactoring should occur. |
+| rules.newline-per-chained-call | <code>EsLintRule</code> | Format chains for better readability. |
 | rules.key-spacing | <code>EslintRule</code> | Have uniform object declarations. |
 | rules.no-trailing-spaces | <code>EslintRule</code> | Discourage superfluous whitespace. |
 | rules.func-call-spacing | <code>EslintRule</code> | Discourage superfluous whitespace. |
@@ -85,4 +87,4 @@ and "other parameters" [object](object). See ESLint documentation for specific r
 MIT
 
 ## Copyright
-&copy; 2016 Yellow Tugboat
+&copy; 2016-2017 Yellow Tugboat
