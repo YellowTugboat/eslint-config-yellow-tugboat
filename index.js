@@ -76,7 +76,9 @@ const config = {
 
     // Whitespace
     'no-whitespace-before-property': 'error',
-    'no-multi-spaces': 'error',
+    'no-multi-spaces': [ 'error', {
+      'ignoreEOLComments': true,
+    }],
     'no-multiple-empty-lines': 'error',
     'key-spacing': 'error',
     'no-trailing-spaces': 'error',
