@@ -70,7 +70,9 @@ const config = {
     'comma-dangle': [ 'error', 'always-multiline' ],
     'curly': 'error',
     'no-caller': 'error',
-    'brace-style': ['error', 'stroustrup', { 'allowSingleLine': true }],
+    'brace-style': [ 'error', 'stroustrup', {
+      'allowSingleLine': true
+    }],
 
     // Whitespace
     'no-whitespace-before-property': 'error',
@@ -79,18 +81,18 @@ const config = {
     'key-spacing': 'error',
     'no-trailing-spaces': 'error',
     'func-call-spacing': 'error',
-    'padded-blocks': ['error', 'never'],
+    'padded-blocks': [ 'error', 'never' ],
     'space-before-blocks': 'error',
     'keyword-spacing': 'error',
     'space-unary-ops': 'error',
-    'spaced-comment': ['error', 'always', {
+    'spaced-comment': [ 'error', 'always', {
       'line': {
-        'markers': ['/'],
-        'exceptions': ['-'],
+        'markers': [ '/' ],
+        'exceptions': [ '-' ],
       },
       'block': {
-        'markers': ['!'],
-        'exceptions': ['*'],
+        'markers': [ '!' ],
+        'exceptions': [ '*' ],
         'balanced': true,
       },
     }],
@@ -104,8 +106,10 @@ const config = {
     'no-eval': 'error',
     'no-implied-eval': 'error',
     'no-label-var': 'error',
-    'no-labels': ['error', { 'allowLoop': true }],
-    'max-len': ['error', {
+    'no-labels': [ 'error', {
+      'allowLoop': true
+    }],
+    'max-len': [ 'error', {
       'code': 100,
       'tabWidth': 2,  // Set to match indent, but no tabs are expected to be used.
       'ignoreComments': true,
@@ -115,14 +119,16 @@ const config = {
       'ignoreTemplateLiterals': true,
     }],
     'max-depth': 'error',
-    'max-statements': ['error', 20],
-    'complexity': ['error', 15],
+    'max-statements': [ 'error', 20 ],
+    'complexity': [ 'error', 15 ],
 
 
     // Arrow Functions
-    'no-confusing-arrow': ['error', {'allowParens': false}],
+    'no-confusing-arrow': [ 'error', {
+      'allowParens': true
+    }],
     'arrow-parens': 'error',
-    'arrow-body-style': ['error', 'as-needed'],
+    'arrow-body-style': [ 'error', 'as-needed' ],
     'arrow-spacing': 'error',
 
     // Switch Statements
@@ -140,3 +146,4 @@ const config = {
 };
 
 module.exports = config;
+
